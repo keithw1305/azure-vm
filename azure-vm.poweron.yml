@@ -1,5 +1,5 @@
 - name: Power On
   hosts: localhost
   azure_rm_virtualmachine:
-    resource_group: EXTEDO-Chine-Demo
-    name: "{{ azure-vm }}"
+    resource_group: EXTEDO-China-Demo
+    name: "Production-VirtualMachine"
