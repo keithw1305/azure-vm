@@ -1,7 +1,11 @@
-- name: Power On
+- name: Start the virtual machine
   hosts: localhost
   tasks: 
   - name: Power On VM
     azure_rm_virtualmachine:
       resource_group: EXTEDO-China-Demo
-      name: "Production-VirtualMachine"
+      name: Production-VirtualMachine
+    register: output
+    
+   - debug: var=output
+    
