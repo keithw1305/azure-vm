@@ -7,5 +7,5 @@
       name: Production-VirtualMachine
     register: output
     
-   - debug: var=output
+  - debug: var=output
     
